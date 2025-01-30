@@ -5,7 +5,7 @@ import { AuthService } from 'src/auth/auth.service';
 @Injectable()
 export class TelegramService implements OnModuleInit {
     private bot: TelegramBot;
-    private AppClientUrl: string = 'https://d462-176-110-129-80.ngrok-free.app/authComplete';
+    private AppClientUrl: string = 'https://holaves-emoji-fb8b.twc1.net/';
     private chatIds: Set<string> = new Set(); // Для хранения уникальных chatId пользователей
 
     constructor(private authService: AuthService) {
