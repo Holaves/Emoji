@@ -5,7 +5,8 @@ import { send } from "process"
 
 const start = async () => {
     try {
-        const PORT = process.env.PORT || 5470
+        const PORT = 5460
+    
         const app = await NestFactory.create(AppModule)
         const cors = require('cors');
         app.enableCors()
